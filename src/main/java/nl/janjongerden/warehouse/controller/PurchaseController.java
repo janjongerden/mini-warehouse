@@ -15,7 +15,7 @@ public class PurchaseController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void addProducts(@RequestBody PurchaseDto purchase) {
+    public void purchaseProduct(@RequestBody PurchaseDto purchase) {
         service.purchaseProduct(purchase.getProductName(), purchase.getAmount());
     }
 }
